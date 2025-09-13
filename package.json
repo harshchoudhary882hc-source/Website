@@ -1,0 +1,33 @@
+{
+  "name": "aether-residences",
+  "version": "1.0.0",
+  "description": "The Aether Residences - Luxury Residential Property Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx live-server . --port=3000 --open=/index.html",
+    "build": "echo 'Static site - no build needed'",
+    "deploy:netlify": "npx netlify deploy --prod --dir .",
+    "deploy:vercel": "npx vercel --prod",
+    "test": "node test-deploy.js",
+    "check": "node test-deploy.js"
+  },
+  "keywords": [
+    "real-estate",
+    "luxury",
+    "residential",
+    "property",
+    "website"
+  ],
+  "author": "Aether Living Pvt. Ltd.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {}
+}
