@@ -1,70 +1,36 @@
-# The Aether Residences
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A luxury residential property website showcasing The Aether Residences - a G+24 sky-high sanctuary in the New Tech Corridor.
+## Getting Started
 
-## Features
+First, run the development server:
 
-- Modern, responsive design
-- Interactive floor plan tabs
-- Contact form with Netlify Forms integration
-- SEO optimized with structured data
-- Accessibility compliant
-- Mobile-first approach
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Deployment Options
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Laravel 11
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Option A - Static File:**
-1. Save as `public/aether.html`
-2. Visit `http://localhost:8000/aether.html`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-**Option B - Blade View:**
-1. Save as `resources/views/aether.blade.php`
-2. Add route to `routes/web.php`: `Route::view('/aether', 'aether');`
-3. Visit `http://localhost:8000/aether`
+## Learn More
 
-### Next.js
+To learn more about Next.js, take a look at the following resources:
 
-1. Drop `aether.html` in `public/` folder
-2. Visit `/aether.html`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Quick Deploy
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-#### GitHub Pages
-1. Create new GitHub repository
-2. Upload `index.html` as the main file
-3. Enable GitHub Pages in repository settings
-4. Your site will be live at `https://username.github.io/repository-name`
+## Deploy on Vercel
 
-#### Netlify
-1. Drag and drop the entire folder to Netlify
-2. Or connect your GitHub repository
-3. Netlify will automatically deploy
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-#### Vercel
-1. Drag and drop the entire folder to Vercel
-2. Or connect your GitHub repository
-3. Vercel will automatically deploy
-
-## Customization
-
-- Replace placeholder images with actual property photos
-- Update contact information in the About section
-- Modify floor plan data in the Floor Plans section
-- Update RERA/Registration details
-- Customize color scheme by modifying CSS variables
-
-## Form Handling
-
-The contact form is configured for Netlify Forms. For other platforms:
-- **Laravel**: Replace form action with Laravel route
-- **Next.js**: Use API routes or external form service
-- **Static**: Use Netlify Forms, Formspree, or similar service
-
-## Browser Support
-
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile responsive
-- Progressive enhancement
-- Graceful degradation for older browsers
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
