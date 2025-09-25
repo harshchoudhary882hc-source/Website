@@ -1,0 +1,33 @@
+[build]
+  publish = "."
+  command = "echo 'Static site - no build needed'"
+
+# Handle form submissions
+[[redirects]]
+  from = "/contact"
+  to = "/success.html"
+  status = 200
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Form handling
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true

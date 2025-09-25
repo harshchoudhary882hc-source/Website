@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - The Aether Residences</title>
+  <meta name="description" content="Thank you for your interest in The Aether Residences. We'll contact you soon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ivory:#FAF9F6;
+      --charcoal:#0F1115;
+      --ink:#14161b;
+      --muted:#6b7280;
+      --gold:#C7A869;
+      --emerald:#0E7A6D;
+      --surface:#111319;
+      --card:#151821;
+      --ring:#252937;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--ivory);
+      background:linear-gradient(180deg,#0b0d12 0%, #0b0d12 40%, #0e1118 100%);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      display:flex; align-items:center; justify-content:center; min-height:100vh;
+    }
+    .container{width:min(600px, 90vw); text-align:center; padding:2rem}
+    .success-icon{width:80px; height:80px; margin:0 auto 2rem; background:linear-gradient(180deg,#e7d7a9, #b08a3e); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem}
+    h1{font-family:"Playfair Display", serif; font-size:clamp(2rem, 4vw, 3rem); margin-bottom:1rem; color:var(--gold)}
+    p{font-size:1.1rem; line-height:1.6; color:#d7d9df; margin-bottom:2rem}
+    .btn{display:inline-block; padding:.75rem 1.5rem; border-radius:999px; border:1px solid rgba(255,255,255,.14); transition:transform .2s ease, background .2s ease, border .2s ease; text-decoration:none; color:var(--ivory)}
+    .btn:hover{transform:translateY(-1px); border-color:rgba(255,255,255,.28)}
+    .btn-primary{background:linear-gradient(180deg, #d7c28d, #b89550); color:#0b0d12; border:none; font-weight:600}
+    .btn-primary:hover{color:#0b0d12}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="success-icon">✓</div>
+    <h1>Thank You!</h1>
+    <p>Your appointment request has been received successfully. Our concierge team will contact you within 24 hours to confirm your private tour of The Aether Residences.</p>
+    <p>We look forward to showing you our vertical oasis in the New Tech Corridor.</p>
+    <a href="/" class="btn btn-primary">Return to Home</a>
+  </div>
+</body>
+</html>
